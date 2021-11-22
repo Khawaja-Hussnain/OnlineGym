@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/addmcine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Session"
+        android:textSize="18sp"
+        android:textColor="@color/bluebutton"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"/>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bluebutton"
+        android:layout_below="@+id/addmcine"
+        android:layout_margin="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/view"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:id="@+id/nametext"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Session Title:"
+            android:textColor="@color/bluebutton"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            />
+
+        <EditText
+            android:id="@+id/sessiontitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:hint="Session Title"
+            android:layout_toRightOf="@+id/nametext"
+            android:inputType="text"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_below="@+id/rl1"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/qtext"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Days:"
+            android:textColor="@color/bluebutton"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            />
+
+        <EditText
+            android:id="@+id/sessiondays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:hint="Number Of Days"
+            android:layout_toRightOf="@id/qtext"
+            android:inputType="phone"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_below="@+id/rl2"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/feetext"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Fee:"
+            android:textColor="@color/bluebutton"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            />
+
+        <EditText
+            android:id="@+id/fee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:hint="Rs. 5000"
+            android:layout_toRightOf="@id/feetext"
+            android:inputType="phone"
+            />
+
+    </RelativeLayout>
+
+   <!-- <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl2"
+        android:layout_margin="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/machineimage"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@color/bluebutton"/>
+        <TextView
+            android:id="@+id/imgtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Picture"
+            android:textSize="13sp"
+            android:textColor="@color/bluebutton"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/machineimage"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addsessionbtn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Add Session"
+        android:textColor="@color/white"
+        android:background="@color/bluebutton"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rl3"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

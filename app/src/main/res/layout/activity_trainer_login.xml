@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrainerLoginActivity">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/gym"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/hellotext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Trainer"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/logindesctext"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/logindesctext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please login to your admin account"
+        android:layout_above="@+id/layout1"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+
+        <EditText
+            android:id="@+id/traineremail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColorHint="@color/solidbutton"
+            android:background="@drawable/button_transparent"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:id="@+id/trainerpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="@color/solidbutton"
+            android:background="@drawable/button_transparent"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:inputType="textPassword"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/trainerloginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/button_solid"
+            android:padding="20dp"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/teal_700"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/layout1">
+
+        <TextView
+            android:id="@+id/forgotpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:textColor="@color/solidbutton"
+            android:onClick="forgotpassword"/>
+
+        <!--<View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:background="@color/solidbutton"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@color/solidbutton"
+            android:onClick="RegisterAdmin"/>-->
+
+    </LinearLayout>
+
+</RelativeLayout>

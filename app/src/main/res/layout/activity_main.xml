@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.UserMainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        >
+
+        <FrameLayout
+            android:id="@+id/Frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottomtRL"
+            android:layout_alignParentTop="true"
+            />
+
+    <RelativeLayout
+        android:id="@+id/bottomtRL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/homelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical"
+            android:background="@drawable/layout_views_background"
+            android:backgroundTint="@color/graysh"
+            android:elevation="20dp"
+            android:padding="20dp"
+            android:layout_margin="5dp"
+            >
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="@color/bluebutton"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activitylayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/homelayout"
+            android:background="@drawable/layout_views_background"
+            android:backgroundTint="@color/graysh"
+            android:elevation="20dp"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/activity"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Activity"
+                android:textAlignment="center"
+                android:textColor="@color/bluebutton"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sessiolayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/activitylayout"
+            android:orientation="vertical"
+            android:background="@drawable/layout_views_background"
+            android:backgroundTint="@color/graysh"
+            android:elevation="20dp"
+            android:padding="20dp"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/search"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Session"
+                android:textAlignment="center"
+                android:textColor="@color/bluebutton"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profilelayuot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/sessiolayout"
+            android:orientation="vertical"
+            android:background="@drawable/layout_views_background"
+            android:backgroundTint="@color/graysh"
+            android:elevation="20dp"
+            android:padding="20dp"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/profile"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textAlignment="center"
+                android:textColor="@color/bluebutton"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

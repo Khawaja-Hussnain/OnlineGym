@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:backgroundTint="@color/lightblue"
+    android:background="@drawable/edittext_layout"
+    android:elevation="5dp"
+    android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/memberimage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/user"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Member Name: "/>
+
+            <TextView
+                android:id="@+id/membername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="member name"
+                android:textColor="@color/bluebutton"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Membership    :"/>
+
+                <TextView
+                    android:id="@+id/membership"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="membership"
+                    android:textColor="@color/bluebutton"/>
+
+
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Trainer              :"/>
+
+                    <TextView
+                        android:id="@+id/memberstrainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trainer"
+                        android:textColor="@color/bluebutton"/>
+
+                </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Date                  :"/>
+
+            <TextView
+                android:id="@+id/membersipdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="membership date"
+                android:textColor="@color/bluebutton"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

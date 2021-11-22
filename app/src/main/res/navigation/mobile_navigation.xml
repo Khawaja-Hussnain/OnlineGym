@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.activeminders.onlinegymapp.Gym.Fragments.GymHomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_machines"
+        android:name="com.activeminders.onlinegymapp.Gym.Fragments.MachineFragment"
+        android:label="@string/menu_machines"
+        tools:layout="@layout/fragment_machines" />
+
+    <fragment
+        android:id="@+id/nav_Session"
+        android:name="com.activeminders.onlinegymapp.Gym.Fragments.GymSessionFragment"
+        android:label="@string/menu_session"
+        tools:layout="@layout/fragment_session_gym" />
+
+
+    <fragment
+        android:id="@+id/nav_Trainers"
+        android:name="com.activeminders.onlinegymapp.Gym.Fragments.TrainersFragment"
+        android:label="@string/menu_trainers"
+        tools:layout="@layout/fragment_trainers" />
+
+   <!-- <fragment
+        android:id="@+id/nav_upcoming_events"
+        android:name="com.activeminders.onlinegymapp.Gym.Fragments.UpcomingEventsFragment"
+        android:label="@string/menu_upcomingevents"
+        tools:layout="@layout/fragment_upcoming_events" />-->
+
+    <fragment
+        android:id="@+id/nav_profile_gym"
+        android:name="com.activeminders.onlinegymapp.Gym.Fragments.GymProfileFragment"
+        android:label="@string/menu_gymprofile"
+        tools:layout="@layout/fragment_profile_gym" />
+
+</navigation>

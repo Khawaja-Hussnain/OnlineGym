@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_machines"
+            android:icon="@drawable/activity"
+            android:title="Machines" />
+        <item
+            android:id="@+id/nav_Session"
+            android:icon="@drawable/search"
+            android:title="Session" />
+
+        <item
+            android:id="@+id/nav_Trainers"
+            android:icon="@drawable/fitnesstrainer"
+            android:title="Trainers" />
+       <!-- <item
+            android:id="@+id/nav_upcoming_events"
+            android:icon="@drawable/activity"
+            android:title="Upcoming_Events" />-->
+        <item
+            android:id="@+id/nav_profile_gym"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+
+    </group>
+</menu>

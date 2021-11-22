@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProfilePhotoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/lightblue"
+        >
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/activityname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Profole"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/backarrow"
+            android:textColor="@color/solidbutton"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profileimagelayout"
+        android:layout_width="310dp"
+        android:layout_height="310dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true">
+
+    <ImageView
+        android:id="@+id/profileimage"
+        android:layout_width="310dp"
+        android:layout_height="310dp"
+        android:src="@drawable/userbig"
+        android:padding="5dp"
+        android:background="@drawable/button_transparent"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/bluebutton"
+            app:cardCornerRadius="50dp"
+            app:cardPreventCornerOverlap="false">
+
+            <ImageView
+                android:id="@+id/selectimg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/edit"
+                android:layout_gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/updatebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="45dp"
+        android:layout_marginLeft="45dp"
+        android:background="@drawable/button_solid"
+        android:layout_marginTop="10dp"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_below="@+id/profileimagelayout"/>
+
+</RelativeLayout>

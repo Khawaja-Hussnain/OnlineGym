@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Gym.AddTrainerActivity"
+    android:weightSum="6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/gym"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.5"
+        />
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Trainers"
+        android:textColor="@color/bluebutton"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="0.5"
+        />
+
+    <EditText
+        android:id="@+id/trainername"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:hint="Trainer name"
+        android:layout_toRightOf="@+id/nametext"
+        android:inputType="text"
+        android:padding="5dp"
+        android:background="@drawable/edittext_layout"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="0.5"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/trainercontact"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:hint="Contact"
+        android:layout_toRightOf="@+id/nametext"
+        android:inputType="phone"
+        android:padding="5dp"
+        android:background="@drawable/edittext_layout"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="0.5"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/traineremail"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:hint="Email"
+        android:layout_toRightOf="@+id/nametext"
+        android:inputType="textEmailAddress"
+        android:padding="5dp"
+        android:background="@drawable/edittext_layout"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="0.5"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:id="@+id/trainerpassword"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:hint="Password"
+        android:layout_toRightOf="@+id/nametext"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:background="@drawable/edittext_layout"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="0.5"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/trainerexperience"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:hint="Experience(1 year)"
+        android:layout_toRightOf="@+id/nametext"
+        android:inputType="phone"
+        android:padding="5dp"
+        android:background="@drawable/edittext_layout"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="0.5"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/trainerage"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:hint="Age"
+        android:layout_toRightOf="@+id/nametext"
+        android:inputType="phone"
+        android:padding="5dp"
+        android:background="@drawable/edittext_layout"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="0.5"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/trainerdescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description About Trainer"
+        android:layout_toRightOf="@+id/nametext"
+        android:inputType="textMultiLine"
+        android:maxLength="100"
+        android:maxLines="3"
+        android:padding="5dp"
+        android:background="@drawable/edittext_layout"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addtrainerbtn"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Add Trainer"
+        android:textColor="@color/white"
+        android:background="@drawable/button_solid"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.5"
+        />
+
+</LinearLayout>

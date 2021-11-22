@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Gym.Fragments.SelectTrainerActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/gym"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        />
+
+   <!-- <RelativeLayout
+        android:id="@+id/trainersearchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/edittext_layout"
+        android:backgroundTint="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Search..."
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:layout_centerVertical="true"/>
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/edittext_layout"
+            android:backgroundTint="@color/bluebutton">
+
+            <ImageView
+                android:id="@+id/searchbtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/searchwhite"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>-->
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trainers"
+            android:textColor="@color/bluebutton"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@+id/addtrainer"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addtrainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Trainer"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/bluebutton"
+            android:background="@drawable/edittext_layout"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            />
+
+    </RelativeLayout>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/selecttrainerRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>

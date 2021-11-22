@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1040366393501",
+    "project_id": "onlinefitnessapp",
+    "storage_bucket": "onlinefitnessapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040366393501:android:95bd52fdfd19b1e4701c74",
+        "android_client_info": {
+          "package_name": "com.activeminders.onlinegymapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1040366393501-c2mg3q2fi10q324494na9emt3ql7mf46.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPE-Xm0HpcU_NHTB0A08nPhTBHNko638s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1040366393501-c2mg3q2fi10q324494na9emt3ql7mf46.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

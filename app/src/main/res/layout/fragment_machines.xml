@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gym.Fragments.GymSessionFragment">
+
+
+    <ImageView
+        android:id="@+id/gymlogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/gym"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/machinesRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gymlogo"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ad_machine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Machines"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/button_solid"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

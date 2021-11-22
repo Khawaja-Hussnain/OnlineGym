@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:background="@drawable/layout_views_background"
+        android:backgroundTint="@color/graysh"
+        android:layout_margin="10dp"
+        android:elevation="5dp">
+
+    <ImageView
+        android:id="@+id/machine_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/gym"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/machine_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Machine name"
+        android:textColor="@color/bluebutton"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/machine_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textColor="@color/bluebutton"
+
+        android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

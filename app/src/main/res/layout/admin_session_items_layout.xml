@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:backgroundTint="@color/lightblue"
+    android:background="@drawable/edittext_layout"
+    android:layout_margin="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/sessionimage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/session"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/sessiontitletext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Session Title"
+            android:textSize="16sp"
+            android:layout_toLeftOf="@+id/trinerexperience"
+            android:textColor="@color/solidbutton"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="40dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/sessionnumdays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Session Number of Days"
+            android:textColor="@color/solidbutton"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/trainername"
+            android:layout_toLeftOf="@+id/trinerexperience"
+            />
+
+        <TextView
+            android:id="@+id/sessionfee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Session Fee"
+            android:textColor="@color/bluebutton"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/trainername"
+            android:layout_toLeftOf="@+id/trinerexperience"
+            />
+
+    </LinearLayout>
+</LinearLayout>

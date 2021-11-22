@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edittext_layout"
+    android:backgroundTint="@color/graysh"
+    android:elevation="25dp"
+    android:layout_marginTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/gymprofileimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/userbig"
+        android:layout_centerVertical="true"
+        />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/approved"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="Approved"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/edittext_layout"
+            android:backgroundTint="@color/solidbutton"/>
+
+        <LinearLayout
+            android:id="@+id/namelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/gymprofileimage"
+            android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="16sp"
+            android:textColor="@color/solidbutton"/>
+        <TextView
+            android:id="@+id/nametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="16sp"
+            android:textColor="@color/bluebutton"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contactlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/gymprofileimage"
+            android:layout_below="@+id/namelayout"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Contact:"
+                android:textSize="16sp"
+                android:textColor="@color/solidbutton"/>
+            <TextView
+                android:id="@+id/contacttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="contact:"
+                android:textSize="16sp"
+                android:textColor="@color/bluebutton"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addresstlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/gymprofileimage"
+            android:layout_below="@+id/contactlayout"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Address:"
+                android:textSize="16sp"
+                android:textColor="@color/solidbutton"/>
+            <TextView
+                android:id="@+id/addresstext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="address:"
+                android:textSize="16sp"
+                android:maxLines="2"
+                android:maxLength="50"
+                android:textColor="@color/bluebutton"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

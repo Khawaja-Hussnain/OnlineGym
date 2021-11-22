@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+    <ImageView
+        android:id="@+id/applogo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/gym"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        />
+
+    <TextView
+        android:id="@+id/gymname"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Hello User!"
+        android:textSize="20sp"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.51"
+        android:weightSum="2"
+        android:layout_marginLeft="20dp">
+
+    <TextView
+        android:id="@+id/desctext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find A"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/rightdesctext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Workout"
+        android:textColor="@color/bluebutton"
+        android:textSize="25sp"
+        android:layout_weight="1"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/pic"
+        android:layout_weight="2.5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/membershipsRV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

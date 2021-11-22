@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:backgroundTint="@color/lightblue"
+    android:background="@drawable/edittext_layout"
+    android:layout_margin="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/gymlogoimg"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/session"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/gymnametext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gym Name"
+                android:textSize="16sp"
+                android:layout_toLeftOf="@+id/trinerexperience"
+                android:textColor="@color/solidbutton"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:background="@color/solidbutton"/>
+
+        <TextView
+            android:id="@+id/sessiontitletext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Session Title"
+            android:textSize="16sp"
+            android:layout_toLeftOf="@+id/trinerexperience"
+            android:textColor="@color/solidbutton"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/sessionnumdays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Session Number of Days"
+            android:textColor="@color/solidbutton"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/trainername"
+            android:layout_toLeftOf="@+id/trinerexperience"
+            />
+
+        <TextView
+            android:id="@+id/sessionfee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Session Fee"
+            android:textColor="@color/bluebutton"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/trainername"
+            android:layout_toLeftOf="@+id/trinerexperience"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/enrollnow"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="enrollnow"
+            android:textColor="@color/bluebutton"
+            android:background="@drawable/edittext_layout"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="10dp"
+            android:padding="5dp"
+            android:layout_marginLeft="40dp"/>
+
+    </LinearLayout>
+</LinearLayout>

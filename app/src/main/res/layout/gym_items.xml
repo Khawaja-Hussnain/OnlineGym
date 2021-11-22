@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/edittext_layout"
+    android:backgroundTint="@color/lightblue"
+    android:padding="5dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/gymlogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/userbig"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/gymnametext"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Gym:"
+        android:textColor="@color/solidbutton"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/gymlogo"
+        />
+
+    <TextView
+        android:id="@+id/gymname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gym Name"
+        android:textColor="@color/solidbutton"
+        android:textEditSideNoPasteWindowLayout="@color/solidbutton"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/gymnametext"
+        />
+
+    <TextView
+        android:id="@+id/gymaddresstext"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/solidbutton"
+        android:textEditSideNoPasteWindowLayout="@color/solidbutton"
+        android:layout_toRightOf="@+id/gymlogo"
+        android:layout_below="@+id/gymname"
+        />
+
+    <TextView
+        android:id="@+id/gymaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="address"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/solidbutton"
+        android:textEditSideNoPasteWindowLayout="@color/solidbutton"
+        android:layout_toRightOf="@+id/gymaddresstext"
+        android:layout_below="@+id/gymname"
+        />
+
+</RelativeLayout>

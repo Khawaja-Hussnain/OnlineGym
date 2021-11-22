@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context=".User.Fragments.ActivityFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:layout_margin="10dp">
+
+    <LinearLayout
+        android:id="@+id/fatratelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/layout_views_background"
+        android:backgroundTint="@color/background"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:elevation="5dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/fatrate"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/fat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fat Rate"
+            android:textColor="@color/bluebutton"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/fatrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(00)"
+            android:textColor="@color/bluebutton"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/weightlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/layout_views_background"
+        android:backgroundTint="@color/background"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:elevation="5dp"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/weight"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:textColor="@color/bluebutton"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/weighttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(00kg)"
+            android:textColor="@color/bluebutton"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bodylayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:layout_margin="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/layout_views_background"
+            android:backgroundTint="@color/background"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:elevation="5dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/bodysize"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="waste"
+                android:textColor="@color/bluebutton"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/bodysize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(00)"
+                android:textColor="@color/bluebutton"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chestlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/layout_views_background"
+            android:backgroundTint="@color/background"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:elevation="5dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/chectsize"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/chest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chest"
+                android:textColor="@color/bluebutton"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/chestsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(00 in)"
+                android:textColor="@color/bluebutton"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:id="@+id/heightlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/layout_views_background"
+            android:backgroundTint="@color/background"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:elevation="5dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/height"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height"
+                android:textColor="@color/bluebutton"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/heighttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(0 feet)"
+                android:textColor="@color/bluebutton"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bisepslayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/layout_views_background"
+            android:backgroundTint="@color/background"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:elevation="5dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/bisepsize"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/biseps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biseps"
+                android:textColor="@color/bluebutton"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/bispesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00 in"
+                android:textColor="@color/bluebutton"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

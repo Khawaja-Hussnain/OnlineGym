@@ -70,6 +70,7 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="10dp"
             android:padding="15dp"
+            android:maxLength="25"
             android:textAlignment="center"
             android:textStyle="normal"
             android:inputType="textEmailAddress"

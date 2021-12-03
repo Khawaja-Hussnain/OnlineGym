@@ -3,7 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/khawa/AndroidStudioProjects/OnlineGymApp/app/src/main/res/layout/activity_add_trainer.xml" value="0.18" />
+        <entry key="..\:/Users/khawa/AndroidStudioProjects/OnlineGymApp/app/src/main/res/layout/activity_gym_owner_login.xml" value="0.1" />
+        <entry key="..\:/Users/khawa/AndroidStudioProjects/OnlineGymApp/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/khawa/AndroidStudioProjects/OnlineGymApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/khawa/AndroidStudioProjects/OnlineGymApp/app/src/main/res/layout/activity_my_memberships.xml" value="0.12" />
+        <entry key="..\:/Users/khawa/AndroidStudioProjects/OnlineGymApp/app/src/main/res/layout/activity_register.xml" value="0.1" />
         <entry key="..\:/Users/khawa/AndroidStudioProjects/OnlineGymApp/app/src/main/res/layout/activity_search_session.xml" value="0.1" />
+        <entry key="..\:/Users/khawa/AndroidStudioProjects/OnlineGymApp/app/src/main/res/layout/activity_trainer_login.xml" value="0.1" />
+        <entry key="..\:/Users/khawa/AndroidStudioProjects/OnlineGymApp/app/src/main/res/layout/activity_trainer_main.xml" value="0.1" />
+        <entry key="..\:/Users/khawa/AndroidStudioProjects/OnlineGymApp/app/src/main/res/layout/admin_session_items_layout.xml" value="0.18" />
+        <entry key="..\:/Users/khawa/AndroidStudioProjects/OnlineGymApp/app/src/main/res/layout/fragment_home_gym.xml" value="0.1" />
+        <entry key="..\:/Users/khawa/AndroidStudioProjects/OnlineGymApp/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
+        <entry key="..\:/Users/khawa/AndroidStudioProjects/OnlineGymApp/app/src/main/res/layout/gym_session_items_layout.xml" value="0.16" />
+        <entry key="..\:/Users/khawa/AndroidStudioProjects/OnlineGymApp/app/src/main/res/layout/machines_layout.xml" value="0.1" />
+        <entry key="..\:/Users/khawa/AndroidStudioProjects/OnlineGymApp/app/src/main/res/layout/membership_gym_layout.xml" value="0.18" />
+        <entry key="..\:/Users/khawa/AndroidStudioProjects/OnlineGymApp/app/src/main/res/layout/trainer_items_layout.xml" value="0.22" />
+        <entry key="..\:/Users/khawa/AndroidStudioProjects/OnlineGymApp/app/src/main/res/layout/trainer_memberships_layout.xml" value="0.1" />
+        <entry key="..\:/Users/khawa/AndroidStudioProjects/OnlineGymApp/app/src/main/res/layout/user_membership_layout.xml" value="0.18" />
+        <entry key="..\:/Users/khawa/AndroidStudioProjects/OnlineGymApp/app/src/main/res/layout/user_session_items_layout.xml" value="0.22" />
       </map>
     </option>
   </component>

@@ -26,6 +26,7 @@ public class AdminLoginActivity extends AppCompatActivity {
     Button Login;
     private FirebaseAuth mAuth;
     public static final String PREFS_NAME = "LoginPrefs";
+    String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,10 +49,18 @@ public class AdminLoginActivity extends AppCompatActivity {
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (ed_email.getText().toString().equals("")){
-                    Toast.makeText(AdminLoginActivity.this, "Please enter your email", Toast.LENGTH_SHORT).show();
-                }else if (ed_password.getText().toString().equals("")){
-                    Toast.makeText(AdminLoginActivity.this, "Please enter your password", Toast.LENGTH_SHORT).show();
+                if (ed_email.getText().toString().isEmpty()){
+                    ed_email.setError("Please Enter Email Address");
+                    ed_email.requestFocus();
+                    //Toast.makeText(LoginActivity.this, "Please enter your email", Toast.LENGTH_SHORT).show();
+                }else if (!ed_email.getText().toString().matches(emailPattern)){
+                    ed_email.setError("Please Enter Valid Email Address");
+                    ed_email.requestFocus();
+                    //Toast.makeText(LoginActivity.this, "Please enter your email", Toast.LENGTH_SHORT).show();
+                }else if (ed_password.getText().toString().isEmpty()){
+                    ed_password.setError("Please Enter Password");
+                    ed_password.requestFocus();
+                    //Toast.makeText(LoginActivity.this, "Please enter your password", Toast.LENGTH_SHORT).show();
                 }else
                 {
                     SignIn(ed_email.getText().toString(),ed_password.getText().toString());

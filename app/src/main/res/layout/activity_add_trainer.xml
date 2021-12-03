@@ -85,6 +85,7 @@
         android:layout_toRightOf="@+id/nametext"
         android:inputType="textEmailAddress"
         android:padding="5dp"
+        android:maxLength="25"
         android:background="@drawable/edittext_layout"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"

@@ -19,6 +19,7 @@ import android.widget.Toast;
 import com.activeminders.onlinegymapp.R;
 import com.activeminders.onlinegymapp.ResetPasswordActivity;
 import com.activeminders.onlinegymapp.UpdateProfilePhotoActivity;
+import com.activeminders.onlinegymapp.User.MyMembershipsActivity;
 import com.activeminders.onlinegymapp.User.UserMainActivity;
 import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
@@ -38,7 +39,7 @@ import static android.app.Activity.RESULT_OK;
 
 public class ProfileFragment extends Fragment {
 
-    TextView tv_changepassword,tv_signout;
+    TextView tv_changepassword,tv_mymemberships,tv_signout;
     ImageView iv_editimage;
     CircleImageView profileimage;
 
@@ -59,6 +60,7 @@ public class ProfileFragment extends Fragment {
         // Inflate the layout for this fragment
        View view=inflater.inflate(R.layout.fragment_profile, container, false);
        tv_changepassword=view.findViewById(R.id.chnagepassword);
+       tv_mymemberships=view.findViewById(R.id.mymemberships);
        tv_signout=view.findViewById(R.id.signout);
        profileimage=view.findViewById(R.id.profileimageview);
        iv_editimage=view.findViewById(R.id.editimg);
@@ -79,6 +81,13 @@ public class ProfileFragment extends Fragment {
            @Override
            public void onClick(View v) {
                startActivity(new Intent(getContext(), ResetPasswordActivity.class));
+           }
+       });
+
+       tv_mymemberships.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(getContext(), MyMembershipsActivity.class));
            }
        });
 

@@ -12,7 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OnlineGymApp">
-        <activity android:name=".Gym.AssignTrainerToMemberDetailsActivity"></activity>
+        <activity
+            android:name=".User.MyMembershipsActivity"
+            android:exported="true" />
+        <activity android:name=".Gym.AssignTrainerToMemberDetailsActivity" />
         <activity android:name=".Gym.Fragments.SelectTrainerActivity" />
         <activity android:name=".Trainer.TrainerMainActivity" />
         <activity android:name=".TrainerLoginActivity" />

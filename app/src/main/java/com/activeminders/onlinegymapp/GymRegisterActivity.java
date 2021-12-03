@@ -34,6 +34,7 @@ public class GymRegisterActivity extends AppCompatActivity {
     String uid;
 
     public static final String PREFS_NAME = "LoginPrefs";
+    String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,24 +54,40 @@ public class GymRegisterActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (ed_name.getText().toString().equals("")){
-                    Toast.makeText(GymRegisterActivity.this, "Please enter gym name", Toast.LENGTH_SHORT).show();
-                }else if (ed_phone.getText().toString().equals("")){
-                    Toast.makeText(GymRegisterActivity.this, "Please enter gym phone", Toast.LENGTH_SHORT).show();
-                }else if (ed_address.getText().toString().equals("")){
-                    Toast.makeText(GymRegisterActivity.this, "Please enter gym addreess", Toast.LENGTH_SHORT).show();
-                }else if (ed_email.getText().toString().equals("")){
-                    Toast.makeText(GymRegisterActivity.this, "Please enter your email", Toast.LENGTH_SHORT).show();
-                }
-                else if (ed_password.getText().toString().equals("")){
-                    Toast.makeText(GymRegisterActivity.this, "Please enter your password", Toast.LENGTH_SHORT).show();
-                }else if(ed_re_enter_password.getText().toString().equals("")){
-                    Toast.makeText(GymRegisterActivity.this, "Please re_enter your password", Toast.LENGTH_SHORT).show();
-                }else if (!ed_password.getText().toString().equals(ed_re_enter_password.getText().toString())){
-                    Toast.makeText(GymRegisterActivity.this, "Password Does't Match", Toast.LENGTH_SHORT).show();
+                if (ed_name.getText().toString().isEmpty()){
+                    ed_name.setError("Please Enter Name");
+                    ed_name.requestFocus();
+                    //Toast.makeText(RegisterActivity.this, "Please enter your name", Toast.LENGTH_SHORT).show();
+                }else if (ed_phone.getText().toString().isEmpty()){
+                    ed_phone.setError("Please Enter Phone");
+                    ed_phone.requestFocus();
+                    //Toast.makeText(GymRegisterActivity.this, "Please enter gym phone", Toast.LENGTH_SHORT).show();
+                }else if (ed_address.getText().toString().isEmpty()){
+                    ed_address.setError("Please Enter Address");
+                    ed_address.requestFocus();
+                    //Toast.makeText(GymRegisterActivity.this, "Please enter gym addreess", Toast.LENGTH_SHORT).show();
+                }else if (ed_email.getText().toString().isEmpty()){
+                    ed_email.setError("Please Enter Email Address");
+                    ed_email.requestFocus();
+                    //Toast.makeText(LoginActivity.this, "Please enter your email", Toast.LENGTH_SHORT).show();
+                }else if (!ed_email.getText().toString().matches(emailPattern)){
+                    ed_email.setError("Please Enter Valid Email Address");
+                    ed_email.requestFocus();
+                    //Toast.makeText(LoginActivity.this, "Please enter your email", Toast.LENGTH_SHORT).show();
+                }else if (ed_password.getText().toString().isEmpty()){
+                    ed_password.setError("Please Enter Password");
+                    ed_password.requestFocus();
+                    //Toast.makeText(LoginActivity.this, "Please enter your password", Toast.LENGTH_SHORT).show();
+                }else if(ed_re_enter_password.getText().toString().isEmpty()){
+                    ed_re_enter_password.setError("Please Re-enter Password");
+                    ed_re_enter_password.requestFocus();
+                    //Toast.makeText(RegisterActivity.this, "Please re_enter your password", Toast.LENGTH_SHORT).show();
+                }else if (!ed_password.getText().toString().matches(ed_re_enter_password.getText().toString())){
+                    ed_re_enter_password.setError("Password Not Matched");
+                    ed_re_enter_password.requestFocus();
+                    //Toast.makeText(RegisterActivity.this, "Password Does't Match", Toast.LENGTH_SHORT).show();
                 }else
                 {
-
                         GymRegister(ed_name.getText().toString(),ed_phone.getText().toString(),ed_address.getText().toString(),
                                 ed_email.getText().toString(),ed_password.getText().toString());
 

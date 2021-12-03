@@ -2,9 +2,10 @@ package com.activeminders.onlinegymapp.Models;
 
 public class Trainers {
 
-    String name,contact,email,experience,age,description,tid;
+    String name,contact,email,experience,age,description,tid,gid;
 
-    public Trainers(String name, String contact, String email, String experience, String age, String description, String tid) {
+    public Trainers(String name, String contact, String email, String experience,
+                    String age, String description, String tid, String gid) {
         this.name = name;
         this.contact = contact;
         this.email = email;
@@ -12,6 +13,7 @@ public class Trainers {
         this.age = age;
         this.description = description;
         this.tid = tid;
+        this.gid = gid;
     }
 
     public Trainers() {
@@ -63,6 +65,14 @@ public class Trainers {
 
     public void setTid(String tid) {
         this.tid = tid;
+    }
+
+    public String getGid() {
+        return gid;
+    }
+
+    public void setGid(String gid) {
+        this.gid = gid;
     }
 
     public String getDescription() {

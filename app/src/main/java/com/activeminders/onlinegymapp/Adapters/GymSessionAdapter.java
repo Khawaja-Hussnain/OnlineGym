@@ -59,7 +59,7 @@ public class GymSessionAdapter extends RecyclerView.Adapter<GymSessionAdapter.Vi
             tv_sessionTitle=itemView.findViewById(R.id.sessiontitletext);
             tv_sessiondays=itemView.findViewById(R.id.sessionnumdays);
             tv_sessionfee=itemView.findViewById(R.id.sessionfee);
-            sendNotification=itemView.findViewById(R.id.sessionnotificationbtn);
+            //sendNotification=itemView.findViewById(R.id.sessionnotificationbtn);
         }
     }
 

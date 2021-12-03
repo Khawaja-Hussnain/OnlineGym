@@ -37,6 +37,7 @@ public class AddTrainerActivity extends AppCompatActivity {
     FirebaseAuth mAuth;
     String gymid;
     public static final String PREFS_NAME = "LoginPrefs";
+    String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,20 +70,38 @@ public class AddTrainerActivity extends AppCompatActivity {
             trainerRef= FirebaseDatabase.getInstance().getReference().child("Gyms")
                     .child(FirebaseAuth.getInstance().getCurrentUser().getUid());
 
-            if (name.equals("")){
-                Toast.makeText(AddTrainerActivity.this, "Please Enter Trainer Name", Toast.LENGTH_SHORT).show();
-            }else if (contact.equals("")){
-                Toast.makeText(AddTrainerActivity.this, "Please Enter Trainer Contact", Toast.LENGTH_SHORT).show();
-            }else if (email.equals("")){
-                Toast.makeText(AddTrainerActivity.this, "Please Enter Trainer Email", Toast.LENGTH_SHORT).show();
-            }else if (password.equals("")){
-                Toast.makeText(AddTrainerActivity.this, "Please Enter Trainer Password", Toast.LENGTH_SHORT).show();
-            } else if (experience.equals("")) {
-                Toast.makeText(AddTrainerActivity.this, "Please Enter Trainer Experience", Toast.LENGTH_SHORT).show();
-            }else if (age.equals("")){
-                Toast.makeText(AddTrainerActivity.this, "Please Enter Trainer Age", Toast.LENGTH_SHORT).show();
-            }else if (description.equals("")){
-                Toast.makeText(AddTrainerActivity.this, "Please Enter Description About Trainer", Toast.LENGTH_SHORT).show();
+            if (name.isEmpty()){
+                ed_name.setError("Please Enter Name");
+                ed_name.requestFocus();
+                //Toast.makeText(AddTrainerActivity.this, "Please Enter Trainer Name", Toast.LENGTH_SHORT).show();
+            }else if (contact.isEmpty()){
+                ed_contact.setError("Please Enter Contact");
+                ed_contact.requestFocus();
+                //Toast.makeText(AddTrainerActivity.this, "Please Enter Trainer Contact", Toast.LENGTH_SHORT).show();
+            }else if (email.isEmpty()){
+                ed_email.setError("Please Enter Email");
+                ed_email.requestFocus();
+                //Toast.makeText(AddTrainerActivity.this, "Please Enter Trainer Email", Toast.LENGTH_SHORT).show();
+            }else if (!email.matches(emailPattern)){
+                ed_email.setError("Please Enter Valid Email Address");
+                ed_email.requestFocus();
+                //Toast.makeText(LoginActivity.this, "Please enter your email", Toast.LENGTH_SHORT).show();
+            }else if (password.isEmpty()){
+                ed_password.setError("Please Enter Password");
+                ed_password.requestFocus();
+                //Toast.makeText(AddTrainerActivity.this, "Please Enter Trainer Password", Toast.LENGTH_SHORT).show();
+            } else if (experience.isEmpty()) {
+                ed_experience.setError("Please Enter Trainer Experience");
+                ed_experience.requestFocus();
+                //Toast.makeText(AddTrainerActivity.this, "Please Enter Trainer Experience", Toast.LENGTH_SHORT).show();
+            }else if (age.isEmpty()){
+                ed_age.setError("Please Enter Trainer Age");
+                ed_age.requestFocus();
+                //Toast.makeText(AddTrainerActivity.this, "Please Enter Trainer Age", Toast.LENGTH_SHORT).show();
+            }else if (description.isEmpty()){
+                ed_description.setError("Please Enter Description");
+                ed_description.requestFocus();
+                //Toast.makeText(AddTrainerActivity.this, "Please Enter Description About Trainer", Toast.LENGTH_SHORT).show();
             }else {
                 int exp=Integer.parseInt(experience);
                 int agee=Integer.parseInt(age);
